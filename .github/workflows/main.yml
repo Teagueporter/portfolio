@@ -20,7 +20,7 @@ jobs:
       # Use this marketplace step to copy files over SCP. 
       # This copies everything in the www dir of your repo to your /var/www/html directory        
       - name: Copy website files
-        uses: garygrossgarten/github-action-scp@release
+        uses: Teagueporter/github-action-scp@release
         with:
           local: \Users\Teagu\Desktop\porfolio
           remote: /var/www/html
