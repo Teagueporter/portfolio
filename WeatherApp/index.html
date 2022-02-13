@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <script src="script.js"></script>
+  <meta charset="utf-8" />
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+<!-- <div class="hero hero-image">
+  <div class="hero-text">
+  <h1 id="title">Weather App</h1>
 
-<h1>Weather App</h1>
-
-<form>
+<form class="test">
   <label>Enter a U.S. city</label>
-  <input id="weatherInput" type="text"><br/>
-  <input id="weatherSubmit" type="submit" value="Submit">
+  <input id="weatherInput" type="text" placeholder="Search for a city" autofocus><br/>
+  <button id="weatherSubmit">SUBMIT</button>
 </form>
-<div id="weatherResults">
 </div>
+</div> -->
+
+
+
+<section class="top-banner">
+  <div class="container">
+    <h1 class="heading">Teague's Weather Guesser</h1>
+    <form>
+      <input id="weatherInput" type="text" placeholder="Search for a city" autofocus><br/>
+      <button id="weatherSubmit">SUBMIT</button>
+    </form>
+  </div>
+</section>
+
+
+<div id="weatherResults"></div>
+  <div id="forecastResults">
+	</div>
+
+  <div class="api">
+    <div class="container"> For some reason a footer would not work so here is my <a target="_blank" href="https://github.com/BYUCS260/weather-app-Teagueporter">GitHub</a>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="script.js"></script>
+
+
+
 </body>
+
 </html>
