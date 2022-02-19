@@ -1,0 +1,103 @@
+/* GLOBAL STYLES */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #333;
+  font-family:'Roboto',sans-serif;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#random{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  font-family:'Roboto',sans-serif;
+  color:#FFFFFF;
+  background-color: #ff6961;
+  border: none;
+  border-radius: 5px;
+
+}
+
+#jokeStyle{
+  font-family:'Roboto',sans-serif;
+  color: #FAF8F6;
+}
+
+/* a.button1{
+ display:inline-block;
+ 
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-weight:300;
+ 
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+} */
+
+.box{
+  margin: 5px;
+  padding: 10px;
+}
+.joke{
+  justify-content: center;
+}
+
+.typewriter h1 {
+  font-size: 3em;
+  color: #ff6961;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ff6961; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+footer{
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6961;
+  text-align: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff6961 }
+}
+
+
+@media all and (max-width:30em){
+ a.button1{
+  display:block;
+  margin:0.4em auto;
+ }
+}
